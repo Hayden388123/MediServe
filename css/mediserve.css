@@ -1,6 +1,88 @@
 /*# sourceMappingURL=mediserve.css.map */
+/* 全域 */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+:root {
+    --main-font-family: "Inter", "IBM";
+    --blue-0: #F5FCFF;
+    --blue-100: #EDF8FD;
+    --blue-200: #E0F0F8;
+    --blue-300: #CCE6F2;
+    --blue-400: #B2D7E8;
+    --blue-500: #8FC3DB;
+    --blue-600: #67AAC9;
+    --blue-700: #3D8EB3;
+    --blue-800: #1A719A;
+    --blue-900: #005780;
+    --orange-0: #FFE0D4;
+    --orange-100: #FDC2AB;
+    --orange-200: #F9A584;
+    --orange-300: #F28B63;
+    --orange-400: #E97648;
+    --orange-500: #DD6333;
+    --orange-600: #CD5424;
+    --orange-700: #B84619;
+    --orange-800: #A03A12;
+    --orange-900: #87300E;
+    --secondary-yellow1: #F9EC5B;
+    --secondary-yellow2: #F7C80E;
+    --secondary-gray1: #EFEFEF;
+    --secondary-gray1: #797979;
+    --secondary-gray1: #656C7B;
+    --font-size-p: 1rem;
+    --font-size-h6: 1.25rem;
+    --font-size-h5: 1.5rem;
+    --font-size-h4: 2.25rem;
+    --font-size-h3: 2.5rem;
+    --font-size-h2: 3rem;
+    --font-size-h1: 4rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: var(--main-font-family);
+}
+
+header {
+    background-color: var(--blue-0);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 .625rem;
+}
+
+.logo img {
+    display: block;
+    width: 80%;
+    height: auto;
+}
+
+.nav-link {
+    margin-right: 3rem;
+}
+
+.nav-link a {
+    font-size: var(--font-size-h5);
+}
+
+.user {
+    border-radius: 50%;
+    background-color: var(--blue-600);
+}
+
+.user i {
+    font-size: 1.875rem;
+    color: var();
+}
+
+/**** 電腦 ****/
+@media screen and (min-width:1024px) {}
