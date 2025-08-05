@@ -20,8 +20,109 @@
             <div class="nav-link"><a href="">預約紀錄</a></div>
             <div class="nav-link"><a href="">我的提醒</a></div>
         </nav>
+        <div class="bar">
+            <a href="#">
+                <i class="fa-solid fa-bars" data-bs-toggle="collapse" data-bs-target="#bar-collapse"
+                    aria-expanded="false" aria-controls="bar-collapse"></i>
+            </a>
+        </div>
+        <!-- （水平開合 -->
+        <div class="position-fixed top-0 end-0 mt-5" style="margin-top: 60px;z-index: 1050;">
+            <div class="collapse collapse-horizontal" id="bar-collapse">
+                <div class="card1 card-body" style="width: 150px; margin-left: auto;">
+                    <nav class="navbar-m">
+                        <div class="nav-link-m"><a href="">搜尋診所</a></div>
+                        <div class="nav-link-m"><a href="">家庭成員</a></div>
+                        <div class="nav-link-m"><a href="">預約紀錄</a></div>
+                        <div class="nav-link-m"><a href="">我的提醒</a></div>
+                    </nav>
+                </div>
+            </div>
+        </div>
         <div class="user"><a href=""><i class="fa-regular fa-user"></i></a></div>
     </header>
+    <section>
+        <div class="search-bar-con">
+            <div class="search-bar">
+                <input type="text" name="serch-bar" placeholder="診所名稱/科別">
+                <i class="fa-solid fa-magnifying-glass i-left"></i>
+                <i class="fa-solid fa-chevron-down i-right" data-bs-toggle="collapse" data-bs-target="#down-collapse"
+                    aria-expanded="false" aria-controls="down-collapse"></i>
+            </div>
+            <div class="collapse" id="down-collapse">
+                <div class="card2 card-body">
+                    <div class="search-bar-items">選擇科別</div>
+                    <div class="department-list">
+                        <div class="department-list1">
+                            <div class="department">
+                                耳鼻喉科
+                            </div>
+                            <div class="department">
+                                皮膚科
+                            </div>
+                            <div class="department">
+                                復健科
+                            </div>
+                        </div>
+                        <div class="deparment-list1">
+                            <div class="department">
+                                身心科
+                            </div>
+                            <div class="department">
+                                婦產科
+                            </div>
+                            <div class="department">
+                                泌尿科
+                            </div>
+                        </div>
+                        <div class="deparment-list1">
+                            <div class="department">
+                                牙科
+                            </div>
+                            <div class="department">
+                                心臟科
+                            </div>
+                            <div class="department">
+                                眼科
+                            </div>
+                        </div>
+                        <div class="deparment-list1">
+                            <div class="department">
+                                小兒科
+                            </div>
+                            <div class="department">
+                                中醫科
+                            </div>
+                            <div class="department">
+                                骨科
+                            </div>
+                        </div>
+                    </div>
+                    <div class="more-btn-con">
+                        <div class="more-btn"><a href="">+更多</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="client-option">
+            <div class="usually"><a href="">常去診所</a></div>
+            <div class="nearby"><a href="">附近診所</a></div>
+            <div class="popular"><a href="">熱門診所</a></div>
+        </div>
+        <div class="card-client">
+            <div class="client-name">聖康診所</div>
+            <div class="client-num">現場號：1</div>
+            <div class="client-peo">候診人數：5</div>
+            <div class="client-con">
+                <div class="client-text">
+                    <div class="client-text1">距離：0.3km</div>
+                    <div class="client-text1">類別：耳鼻喉科</div>
+                    <div class="client-text1">服務項目：感冒看診、過敏性鼻炎...</div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
         crossorigin="anonymous"></script>
