@@ -50,6 +50,8 @@ a {
 
 body {
     font-family: var(--main-font-family);
+    background: url(../img/bg-m.png) no-repeat;
+    background-size: cover;
 }
 
 /* header */
@@ -58,7 +60,7 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 .625rem;
+    padding: 1rem;
 }
 
 .logo img {
@@ -67,10 +69,12 @@ header {
     height: auto;
 }
 
+.nav-link1,
 .nav-link {
     margin-right: 3rem;
 }
 
+.nav-link1 a,
 .nav-link a {
     display: none;
 }
@@ -90,9 +94,17 @@ header {
     padding: 20px;
 }
 
+.nav-link-m a {
+    color: var(--blue-600);
+}
+
 .bar {
     display: block;
     font-size: 40px;
+}
+
+.bar a {
+    color: var(--blue-600);
 }
 
 .user {
@@ -116,7 +128,7 @@ section {
 .search-bar {
     position: relative;
     width: 100%;
-    margin-top: 20px;
+    margin-top: 80px;
 }
 
 .search-bar input {
@@ -149,14 +161,16 @@ section {
     display: flex;
     width: 90%;
     justify-content: space-around;
-    margin-top: 1.25rem;
+    margin: 24px 0 64px 0;
 }
 
 .usually,
 .nearby,
 .popular {
-    padding: 16px 8px;
-    border-radius: 20px;
+    width: 150px;
+    padding: 1rem .5rem;
+    border-radius: 1.25rem;
+    text-align: center;
 }
 
 .usually a,
@@ -175,15 +189,15 @@ section {
 }
 
 .card2 {
-    border-radius: 20px;
-    border: 1px solid var(--secondary-gray1);
-    padding: 10px;
+    border-radius: 1.25rem;
+    border: .0625rem solid var(--secondary-gray1);
+    padding: .625rem;
 }
 
 .search-bar-items {
     text-align: center;
     font-size: var(--font-size-h5);
-    margin-bottom: 20px;
+    margin-bottom: 1.25rem;
 }
 
 .department-list {
@@ -193,7 +207,7 @@ section {
 }
 
 .department {
-    padding: 10px;
+    padding: .625rem;
 }
 
 .more-btn-con {
@@ -206,14 +220,23 @@ section {
 }
 
 /* card-client */
+.card-client-list {
+    display: flex;
+    gap: 36px;
+}
+
 .card-client {
     width: 300px;
     background-color: white;
     box-shadow: 0px 3px 15px 3px rgba(110, 110, 110, 0.15);
-    border-radius: 20px;
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .client-name {
+    width: 100%;
     background-color: var(--blue-300);
     border-bottom: 1px solid var(--blue-900);
     padding: 16px;
@@ -224,27 +247,74 @@ section {
 
 .client-num,
 .client-peo {
+    width: 100%;
     background-color: var(--blue-100);
     padding: 16px;
     text-align: center;
-    font-size: var(--font-size-h6);
 }
 
 .client-text {
     padding: 16px;
 }
 
+.client-text1 {
+    margin-bottom: 16px;
+}
+
+.more-btn-con {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.more-btn a {
+    color: var(--blue-500);
+}
+
+.primary-btn {
+    padding: 16px;
+    width: 150px;
+    background-color: var(--secondary-yellow1);
+    border-radius: 20px;
+    margin-bottom: 16px;
+}
+
+.btn1 {
+    font-size: var(--font-size-h5);
+}
+
+.btn1 a {
+    color: var(--blue-900);
+}
+
 /**** 電腦 ****/
 @media screen and (min-width: 1024px) {
+    body {
+        background: url(../img/bg-2.png) no-repeat;
+    }
+
+    .nav-link1 a {
+        color: var(--blue-900);
+        border-bottom: 2px solid var(--blue-900);
+        display: block;
+        font-size: var(--font-size-h5);
+    }
+
     .nav-link a {
         display: block;
         font-size: var(--font-size-h5);
         color: var(--blue-600);
     }
 
+    .nav-link a:hover {
+        color: var(--blue-900);
+        border-bottom: 2px solid var(--blue-900);
+    }
+
     .bar {
         display: none;
     }
+
+
 
     .user {
         border-radius: 50%;
@@ -281,5 +351,19 @@ section {
     .nearby,
     .popular {
         padding: 16px 16px;
+    }
+
+    .usually:hover,
+    .nearby:hover,
+    .popular:hover {
+        background-color: var(--secondary-gray1);
+    }
+
+    .card-client:hover .client-name {
+        background-color: var(--blue-600);
+    }
+
+    .primary-btn:hover {
+        background-color: var(--secondary-yellow2);
     }
 }

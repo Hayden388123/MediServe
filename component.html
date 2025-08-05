@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* primary-btn */
+        .primary-btn {
+            padding: 16px;
+            width: 150px;
+            background-color: var(--secondary-yellow1);
+            border-radius: 20px;
+            margin-bottom: 16px;
+        }
+
+        .btn1 {
+            font-size: var(--font-size-h5);
+        }
+
+        .btn1 a {
+            color: var(--blue-900);
+        }
+
+        /* card-client */
+        .card-client-list {
+            display: flex;
+            gap: 36px;
+        }
+
+        .card-client {
+            width: 300px;
+            background-color: white;
+            box-shadow: 0px 3px 15px 3px rgba(110, 110, 110, 0.15);
+            border-radius: 1.25rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .client-name {
+            width: 100%;
+            background-color: var(--blue-300);
+            border-bottom: 1px solid var(--blue-900);
+            padding: 16px;
+            border-radius: 20px 20px 0 0;
+            text-align: center;
+            font-size: var(--font-size-h6);
+        }
+
+        .client-num,
+        .client-peo {
+            width: 100%;
+            background-color: var(--blue-100);
+            padding: 16px;
+            text-align: center;
+        }
+
+        .client-text {
+            padding: 16px;
+        }
+
+        .client-text1 {
+            margin-bottom: 16px;
+        }
+
+        .more-btn-con {
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .more-btn a {
+            color: var(--blue-500);
+        }
+
+        .primary-btn {
+            padding: 16px;
+            width: 150px;
+            background-color: var(--secondary-yellow1);
+            border-radius: 20px;
+            margin-bottom: 16px;
+        }
+
+        .btn1 {
+            font-size: var(--font-size-h5);
+        }
+
+        .btn1 a {
+            color: var(--blue-900);
+        }
+
+        /* +更多 */
+        .more-btn-con {
+            display:
+                flex;
+            justify-content:
+                flex-end;
+        }
+
+        .more-btn a {
+            color:
+                var(--blue-500);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- primary-btn -->
+    <button class="primary-btn">
+        <div class="btn1"><a href="index.html">確定</a></div>
+    </button>
+    <!-- card-client -->
+    <div class="card-client">
+        <div class="client-name">聖康診所</div>
+        <div class="client-num">現場號：1</div>
+        <div class="client-peo">候診人數：5</div>
+        <div class="client-con">
+            <div class="client-text">
+                <div class="client-text1">距離：0.3km</div>
+                <div class="client-text1">類別：耳鼻喉科</div>
+                <div class="client-text1">服務項目：感冒看診、過敏性鼻炎...</div>
+                <div class="more-btn-con">
+                    <div class="more-btn"><a href="">+更多</a></div>
+                </div>
+            </div>
+        </div>
+        <button class="primary-btn">
+            <div class="btn1">開始預約</div>
+        </button>
+    </div>
+    <!-- +更多 -->
+    <div class="more-btn-con">
+        <div class="more-btn"><a href="">+更多</a></div>
+    </div>
+</body>
+
+</html>
