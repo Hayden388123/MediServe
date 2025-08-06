@@ -338,6 +338,14 @@
                background-color: var(--secondary-yellow2)
            }
 
+           .calender-button:hover {
+               background-color: var(--blue-300);
+           }
+
+           .doctor-button:hover {
+               background-color: var(--blue-300);
+           }
+
            form {
                display: flex;
                justify-content: center;
