@@ -6,6 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        /* secondary-btn */
+        .yes-no {
+            width: 90%;
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            margin-top: 1.5rem;
+        }
+
+        .secondary-btn {
+            padding: 16px;
+            width: 120px;
+            background-color: var(--secondary-gray1);
+            border-radius: 20px;
+            margin-bottom: 16px;
+        }
+
         /* primary-btn */
         .primary-btn {
             padding: 16px;
@@ -102,10 +119,25 @@
             color:
                 var(--blue-500);
         }
+
+        /* 電腦版 */
+        .secondary-btn:hover {
+            background-color: var(--secondary-gray2)
+        }
+
+        .primary-btn:hover {
+            background-color: var(--secondary-yellow2)
+        }
     </style>
 </head>
 
 <body>
+    <!-- secondary-btn -->
+    <div class="yes-no">
+        <button class="secondary-btn">
+            <div class="btn1"><a href="">取消</a></div>
+        </button>
+    </div>
     <!-- primary-btn -->
     <button class="primary-btn">
         <div class="btn1"><a href="index.html">確定</a></div>
