@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>reserve-2-1預約詳情</title>
+    <title>預約詳情-打瘦瘦針</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
@@ -113,13 +113,49 @@
                         </div>
                     </div>
                 </div>
+                <!-- btn5 -->
+                <button class="calender-button" data-bs-toggle="modal" data-bs-target="#date5">
+                    8/5<br>(二)
+                </button>
+                <div class="modal fade" id="date5" tabindex="-1" aria-labelledby="dateModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header justify-content-center">
+                                <div class="modal-title" id="vaccineModalLabel">8/5(二)
+                                </div>
+                            </div>
+                            <div class="modal-body">
+                                <button class="time-button">
+                                    09：00-12：00
+                                </button>
+                                <button class="time-button">
+                                    14：00-17：00
+                                </button>
+                                <button class="time-button">
+                                    18：30-21：30
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
+            <div class="title">選擇醫師</div>
+            <div class="doctor">
+                <button class="doctor-button">
+                    黃小明醫師
+                </button>
+                <button class="doctor-button">
+                    林小美醫師
+                </button>
+            </div>
+            <div class="title">備註</div>
+            <textarea cols="60" rows="8" id="textarea" name="textarea" placeholder="要和醫師說的話(限200字)"></textarea>
             <div class="yes-no">
                 <button class="secondary-btn">
                     <div class="btn1"><a href="reserve-1.html">取消</a></div>
                 </button>
                 <button class="primary-btn">
-                    <div class="btn1"><a href="">確定</a></div>
+                    <div class="btn1"><a href="reserve-4.html">確定</a></div>
                 </button>
             </div>
         </div>

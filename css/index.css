@@ -225,14 +225,14 @@ section {
 .card-client-list {
     display: flex;
     gap: 36px;
+    width: 100%;
     overflow-x: auto;
     scroll-padding-left: 50px;
 
 }
 
 .card-client {
-    scroll-snap-align: start;
-    width: 300px;
+    min-width: 80vw;
     background-color: white;
     box-shadow: 0px 3px 15px 3px rgba(110, 110, 110, 0.15);
     border-radius: 1.25rem;
@@ -290,6 +290,18 @@ section {
 
 .btn1 a {
     color: var(--blue-900);
+}
+
+footer {
+    width: 100vw;
+    background-color: var(--blue-700);
+    padding: 2.25rem;
+    text-align: center;
+}
+
+.footer-text {
+    color: white;
+    font-size: var(--font-size-h5);
 }
 
 /**** 電腦 ****/
@@ -363,6 +375,10 @@ section {
     .nearby:hover,
     .popular:hover {
         background-color: var(--secondary-gray1);
+    }
+
+    .card-client {
+        min-width: 33vw;
     }
 
     .card-client:hover .client-name {

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>基本資料</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/reserve.css">
+</head>
+
+<body>
+    <div class="sch-list">
+        <div class="sch"><a href="">服務項目</a></div>
+        <div class="right-arrow">></div>
+        <div class="sch"><a href="">預約詳情</a></div>
+        <div class="right-arrow">></div>
+        <div class="sch"><a href="">看診時間及醫師</a></div>
+        <div class="right-arrow">></div>
+        <div class="sch1"><a href="">基本資料</a></div>
+    </div>
+    <section>
+        <div class="card-reserve">
+            <div class="title">基本資料</div>
+            <form action="">
+                <div class="form-group">
+                    <label for="name">姓名</label>
+                    <input type="text" id="name" name="name" placeholder="真實姓名">
+                </div>
+                <div class="form-group">
+                    <label for="">性別</label>
+                    <div class="gender-list">
+                        <div class="gender-options">
+                            <label for="male">男</label>
+                            <input type="radio" id="male" name="option" value="male">
+                        </div>
+                        <div class="gender-options">
+                            <label for="female">女</label>
+                            <input type="radio" id="female" name="option" value="female">
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="id">身分證</label>
+                    <input type="text" id="id" name="id" placeholder="A123456789">
+                </div>
+                <div class="form-group">
+                    <label for="birth">生日</label>
+                    <input type="text" id="birth" name="birth" placeholder="90/01/01">
+                </div>
+                <div class="form-group">
+                    <label for="phone">手機號碼</label>
+                    <input type="text" id="phone" name="phone" placeholder="0987654321">
+                </div>
+            </form>
+            <div class="yes-no">
+                <button class="secondary-btn">
+                    <div class="btn1"><a href="reserve-3.html">取消</a></div>
+                </button>
+                <button class="primary-btn">
+                    <div class="btn1"><a href="reserve-5.html">確定</a></div>
+                </button>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

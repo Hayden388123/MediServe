@@ -150,8 +150,10 @@
        /* reserve-3 */
        .calender {
            display: flex;
+           width: 100%;
            gap: 1.5rem;
-
+           overflow-x: auto;
+           margin-bottom: 3rem;
        }
 
        .service-button,
@@ -169,7 +171,7 @@
        }
 
        .calender-button {
-           width: 100px;
+           width: 25%;
            padding: 1rem .5rem;
        }
 
@@ -189,7 +191,94 @@
 
        }
 
-       /* reserve-3 */
+       .doctor {
+           width: 80%;
+           display: flex;
+           justify-content: center;
+           gap: 1.5rem;
+       }
+
+       .doctor-button {
+           width: 40%;
+           padding: 1rem .5rem;
+           background-color: white;
+           border-radius: 20px;
+           border: 1px solid var(--secondary-gray2);
+           margin-bottom: 3rem;
+       }
+
+       textarea {
+           padding: 20px;
+           max-width: 80%;
+           background-color: white;
+           border-radius: 20px;
+           border: none;
+           resize: none;
+       }
+
+       /* reserve-4 */
+       form {
+           display: flex;
+           width: 100%;
+           flex-direction: column;
+       }
+
+       .form-group {
+           margin: .75rem;
+           display: flex;
+           justify-content: space-between;
+           align-items: center;
+       }
+
+       .gender-list {
+           width: 49%;
+           display: flex;
+       }
+
+       .gender-options {
+           padding-right: 20px;
+       }
+
+       label {
+           font-size: var(--font-size-h5);
+       }
+
+       input {
+           border-radius: 1.25rem;
+           border: none;
+           max-width: 150px;
+           padding: 12px;
+       }
+
+       /* reserve-5 */
+       .reserve-5 {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           height: 100vh;
+       }
+
+       .reserve-result {
+           font-size: var(--font-size-h4);
+           color: var(--orange-300);
+           margin-bottom: 1rem;
+       }
+
+       .result-info {
+           background-color: white;
+           border-radius: 1.25rem;
+           max-width: 100%;
+           padding: 1rem 2rem;
+       }
+
+       .info-group {
+           display: flex;
+           text-align: start;
+           font-size: var(--font-size-h6);
+           margin: 1rem 0;
+       }
+
+       /* btn */
        .yes-no {
            width: 90%;
            display: flex;
@@ -234,7 +323,7 @@
            }
 
            .card-reserve {
-               width: 70%;
+               width: 60%;
            }
 
            .service-button:hover {
@@ -247,5 +336,31 @@
 
            .primary-btn:hover {
                background-color: var(--secondary-yellow2)
+           }
+
+           form {
+               display: flex;
+               justify-content: center;
+           }
+
+           .form-group {
+               width: 60%;
+               margin: 1.5rem auto;
+           }
+
+           .gender-list {
+               justify-content: center;
+           }
+
+           .gender-options {
+               width: 100%;
+           }
+
+           input {
+               max-width: 300px;
+           }
+
+           .result-info {
+               max-width: 60%;
            }
        }
