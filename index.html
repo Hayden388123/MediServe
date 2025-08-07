@@ -113,16 +113,51 @@
         <div class="card-client-list">
             <!-- card1 -->
             <div class="card-client">
-                <div class="client-name">聖康診所</div>
+                <div class="client-name">永愛診所</div>
                 <div class="client-num">現場號：1</div>
                 <div class="client-peo">候診人數：5</div>
                 <div class="client-con">
                     <div class="client-text">
                         <div class="client-text1">距離：0.3km</div>
                         <div class="client-text1">類別：耳鼻喉科</div>
-                        <div class="client-text1">服務項目：感冒看診、過敏...</div>
+                        <div class="client-text1">服務項目：小兒門診、耳鼻喉...</div>
                         <div class="more-btn-con">
-                            <div class="more-btn"><a href="">+更多</a></div>
+                            <div class="more-btn"><a href="" data-bs-toggle="modal"
+                                    data-bs-target="#clientModal">+更多</a></div>
+                        </div>
+                        <div class="modal fade" id="clientModal" tabindex="-1" aria-labelledby="clientModalLabel"
+                            aria-hidden="true">
+                            <div class="modal-dialog">
+                                <div class="client-info">
+                                    <div class="modal-header justify-content-center">
+                                        <img class="client-logo" src="./img/client-logo.png" alt="">
+                                        <div class="modal-title" id="vaccineModalLabel">永愛診所</div>
+                                    </div>
+                                    <div class="modal-body justify-content-start">
+                                        <div class="client-progress">
+                                            <div class="client-progress-title">看診進度</div>
+                                            <div class="progress-group">
+                                                <div class="client-num">
+                                                    <p>現場號</p>
+                                                    <div class="num1">1</div>
+                                                </div>
+                                                <div class="client-peo">
+                                                    <p>候診人數</p>
+                                                    <div class="num1">5</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="client-service">
+                                            <div class="client-service-title">診所服務</div>
+                                            <p>小兒門診、耳鼻喉門診、家醫科門診、減重門診、小兒/成人疫苗施打、成人健檢/抽血、過敏原檢測、吸蒸氣、吸鼻涕 </p>
+                                        </div>
+                                        <div class="client-contect">
+                                            <div class="client-contect-title">聯絡資訊</div>
+                                            <p>電話：02-2925-8680<br>地址：新北市永和區永平路282-1號1F</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
