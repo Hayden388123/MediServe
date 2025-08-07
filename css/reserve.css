@@ -53,12 +53,67 @@
            background-size: cover;
        }
 
+       .bar {
+           width: auto;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           margin: 1.5rem 1.5rem;
+       }
+
+       .progress-bar {
+           width: 50%;
+           display: inline-block;
+           height: 2rem;
+           background-color: var(--secondary-gray1);
+           box-shadow: 0px .125rem .125rem rgba(0, 0, 0, 0.25) inset;
+           border-radius: 3.125rem;
+           position: relative;
+       }
+
+       .progress-num {
+           display: flex;
+           height: 1.875rem;
+           border-radius: 3.125rem;
+           position: absolute;
+           bottom: 0;
+           left: 0;
+           color: white;
+           font-weight: bold;
+           justify-content: center;
+           align-items: center;
+       }
+
+       .progress-1 {
+           width: 25%;
+           background: var(--blue-600);
+       }
+
+       .progress-2 {
+           width: 50%;
+           background: var(--blue-600);
+       }
+
+       .progress-3 {
+           width: 75%;
+           background: var(--blue-600);
+       }
+
+       .progress-4 {
+           width: 100%;
+           background: var(--blue-600);
+       }
+
        .sch-list {
            width: auto;
            display: flex;
            justify-content: center;
            align-items: center;
            margin: 1.5rem 1.5rem;
+       }
+
+       .sch-list {
+           display: none;
        }
 
        .sch1,
@@ -272,7 +327,6 @@
        }
 
        .info-group {
-           display: flex;
            text-align: start;
            font-size: var(--font-size-h6);
            margin: 1rem 0;
@@ -316,6 +370,14 @@
        @media screen and (min-width: 1024px) {
            body {
                background: url(../img/bg-2.png) no-repeat;
+           }
+
+           .bar {
+               display: none;
+           }
+
+           .sch-list {
+               display: flex;
            }
 
            .sch:hover {
