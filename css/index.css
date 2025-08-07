@@ -344,26 +344,21 @@ section {
     margin-bottom: .75rem;
 }
 
-.btn1 {
-    font-size: var(--font-size-h5);
-}
-
 .btn1 a {
     color: var(--blue-900);
+    font-size: var(--font-size-h6);
 }
 
 footer {
-    width: 100vw;
+    width: 100%;
     background-color: var(--blue-700);
-    padding: 1.5rem;
+    padding: .75rem;
     text-align: center;
-    position: fixed;
-    bottom: 0;
 }
 
 .footer-text {
     color: white;
-    font-size: var(--font-size-h5);
+    font-size: var(--font-size-p);
     margin-bottom: 0;
 }
 
