@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>定期回診</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/remind.css">
+</head>
+
+<body>
+    <section>
+        <div class="card-remind">
+            <div class="title">定期回診</div>
+            <form action="">
+                <div class="form-group">
+                    <label for="depart">回診科別</label>
+                    <input type="text" id="depart" name="depart" placeholder="復健科">
+                </div>
+                <div class="form-group">
+                    <label for="time">上次回診時間</label>
+                    <input type="date" id="time" name="time">
+                </div>
+                <div class="form-group">
+                    <label for="period">回診間隔時間</label>
+                    <input list="period-list" id="period" name="period" placeholder="一個月">
+                    <datalist id="period-list">
+                        <option value="一天">
+                        <option value="一周">
+                        <option value="二周">
+                        <option value="三周">
+                        <option value="一個月">
+                        <option value="二個月">
+                        <option value="三個月">
+                    </datalist>
+                </div>
+                <div class="form-group">
+                    <label for="remind">提前多久提醒</label>
+                    <input list="remind-list" id="remind" name="remind" placeholder="一周">
+                    <datalist id="remind-list">
+                        <option value="一天">
+                        <option value="一周">
+                        <option value="二周">
+                        <option value="一個月">
+                    </datalist>
+                </div>
+                <div class="form-group">
+                    <label for="id">備註</label>
+                    <textarea cols="18" rows="3" id="textarea" name="textarea" placeholder="ex.帶寶寶手冊"></textarea>
+                </div>
+            </form>
+            <div class="yes-no">
+                <button class="secondary-btn">
+                    <div class="btn1"><a href="remind-1.html">取消</a></div>
+                </button>
+                <button class="primary-btn">
+                    <div class="btn1"><a href="remind.html">確定</a></div>
+                </button>
+            </div>
+        </div>
+    </section>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

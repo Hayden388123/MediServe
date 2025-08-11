@@ -115,6 +115,7 @@ header {
 
 /* search-bar*/
 section {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,8 +157,8 @@ section {
     right: 10px;
 }
 
-/* client-option */
-.client-option {
+/* client-options */
+.client-options {
     display: flex;
     width: 90%;
     justify-content: space-around;
@@ -165,28 +166,32 @@ section {
     gap: 24px;
 }
 
-.usually,
-.nearby,
-.popular {
+.client-option1,
+.client-option {
     width: 150px;
     padding: 1rem .5rem;
     border-radius: 1.25rem;
     text-align: center;
 }
 
-.usually a,
-.nearby a,
-.popular a {
+.client-option1 a,
+.client-option a {
     color: black;
 }
 
-.usually,
-.popular {
+.client-option {
     background-color: var(--blue-100);
 }
 
-.nearby {
+.client-option1 {
     background-color: var(--secondary-gray1);
+}
+
+/* ***index none*** */
+.none {
+    color: var(--secondary-gray2);
+    font-size: var(--font-size-h6);
+    margin-bottom: 1.5rem;
 }
 
 .card2 {
@@ -215,6 +220,47 @@ section {
     color: black;
 }
 
+/* ***小兒科*** */
+.ped-info {
+    width: 100%;
+    background-color: var(--blue-100);
+    border-radius: 1.25rem;
+    box-shadow: 0px 3px 15px 3px rgba(110, 110, 110, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5rem;
+}
+
+.modal-header {
+    color: var(--blue-700);
+    font-size: var(--font-size-h6);
+}
+
+.service-container {
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: repeat(4, 6.25rem);
+    gap: 2rem 3rem;
+}
+
+.service-button {
+    width: 100%;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    font-size: var(--font-size-h6);
+    cursor: pointer;
+}
+
+.service-button a {
+    color: black;
+}
+
+/* ***小兒科*** */
+
 .more-btn-con {
     display: flex;
     justify-content: flex-end;
@@ -223,6 +269,7 @@ section {
 .more-btn a {
     color: var(--blue-500);
 }
+
 
 /* card-client */
 
@@ -349,6 +396,7 @@ section {
     font-size: var(--font-size-h6);
 }
 
+/* footer */
 footer {
     width: 100%;
     background-color: var(--blue-700);
@@ -365,13 +413,13 @@ footer {
 /************ family ************/
 .family-group {
     width: 100%;
-    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 2rem;
     padding: 0 2rem;
+    margin: 3rem 0;
 }
 
 .card-family {
@@ -383,6 +431,33 @@ footer {
     align-items: center;
     flex-direction: column;
     padding: 1rem;
+}
+
+.user-img1,
+.user-img2,
+.user-img3,
+.user-img4 {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    background: url(../img/grandma.jpg) no-repeat;
+    background-size: cover;
+}
+
+.user-img2 {
+    background: url(../img/grandpa.jpg) no-repeat;
+    background-size: cover;
+}
+
+.user-img3 {
+    background: url(../img/mom.jpg) no-repeat;
+    background-size: cover;
+}
+
+.user-img4 {
+    background: url(../img/daughter.jpg) no-repeat;
+    background-size: cover;
 }
 
 .family-name,
@@ -400,14 +475,153 @@ footer {
 .title {
     font-size: var(--font-size-h4);
     color: var(--blue-900);
-    margin-bottom: 48px;
+    margin: 48px 0;
+}
+
+.history-group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+}
+
+.history-group a {
+    width: 100%;
+}
+
+.card-history,
+.card-history1 {
+    background-color: var(--secondary-gray1);
+    box-shadow: 0px 3px 10px 3px rgba(110, 110, 110, 0.15);
+    border-radius: 1.25rem;
+    padding: 1rem 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.card-history1 {
+    background-color: white;
+}
+
+.hsitory-title {
+    color: var(--orange-200);
+    font-size: var(--font-size-h4);
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.history-con {
+    font-size: var(--font-size-h6);
+    line-height: 2.25rem;
+    color: black;
+}
+
+/************ reserve-that-day ************/
+.that-day-section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 32px;
+    justify-content: center;
+}
+
+.that-day {
+    width: 90%;
+}
+
+.that-day-title {
+    color: var(--orange-200);
+    font-size: var(--font-size-h4);
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.that-day-client-name {
+    font-size: var(--font-size-h4);
+    text-align: center;
+    margin-bottom: 1.25rem;
+}
+
+.card-that-day {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 3px 15px 3px rgba(110, 110, 110, 0.15);
+    border-radius: 1.25rem;
+    padding: 1rem 2rem;
+}
+
+.card-that-day i {
+    color: var(--blue-700);
+    text-align: center;
+    margin-bottom: 1.25rem;
+    font-size: var(--font-size-h5);
+}
+
+.that-day-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--font-size-h5);
+    margin-bottom: 1.25rem;
+}
+
+.that-day-num,
+.that-day-peo {
+    text-align: center;
+    background-color: var(--blue-100);
+    width: 9.375rem;
+    border-radius: 1.25rem;
+    margin: 0 1rem;
+    padding: 0.5rem 0;
 }
 
 /************ remind ************/
+.card-remind {
+    min-width: 70vw;
+    background-color: white;
+    box-shadow: 0px 3px 15px 3px rgba(110, 110, 110, 0.15);
+    border-radius: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.remind-title {
+    width: 100%;
+    background-color: var(--orange-0);
+    font-size: var(--font-size-h5);
+    text-align: center;
+    border-radius: 1.25rem;
+    padding: 1rem 0;
+}
+
+.remind-text {
+    padding: .75rem;
+    font-size: var(--font-size-h6);
+}
+
+/* btn */
+.primary-btn-outside {
+    padding: 1rem;
+    width: 7.5rem;
+    background-color: var(--secondary-yellow1);
+    border-radius: 20px;
+    margin-bottom: 1rem;
+}
+
+.btn1 a {
+    color: var(--blue-900);
+    font-size: var(--font-size-h6);
+}
+
 /**** 電腦 ****/
 @media screen and (min-width: 1024px) {
     body {
         background: url(../img/bg-2.png) no-repeat;
+        background-size: cover;
     }
 
     .nav-link1 a {
@@ -432,8 +646,6 @@ footer {
         display: none;
     }
 
-
-
     .user {
         border-radius: 50%;
         background-color: var(--blue-600);
@@ -442,15 +654,8 @@ footer {
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-
-    .user:hover {
-        background-color: var(--blue-800);
-    }
-
-    .user i {
-        font-size: 1.875rem;
-        color: var(--secondary-gray1);
+        background: url(../img/daughter.jpg);
+        background-size: cover;
     }
 
     section {
@@ -465,19 +670,17 @@ footer {
         width: 100%;
     }
 
-    .client-option {
+    .client-options {
         width: 50%;
     }
 
-    .usually,
-    .nearby,
-    .popular {
+    .client-option1,
+    .client-option {
         padding: 16px 16px;
     }
 
-    .usually:hover,
-    .nearby:hover,
-    .popular:hover {
+    .client-option1:hover,
+    .client-option:hover {
         background-color: var(--secondary-gray1);
     }
 
@@ -502,6 +705,43 @@ footer {
         width: 20%;
     }
 
+    .card-family:hover {
+        background-color: var(--orange-100);
+    }
+
     /************ history ************/
+    .history-group a {
+        width: 40%;
+    }
+
+    .card-history:hover,
+    .card-history1:hover {
+        background-color: var(--secondary-gray1);
+    }
+
+    .that-day {
+        width: 40%;
+    }
+
     /************ remind ************/
+    .remind-group {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .card-remind {
+        min-width: 35vw;
+        margin-right: 1.5rem;
+    }
+
+    .primary-btn-outside {
+        position: fixed;
+        bottom: 60px;
+        right: 80px;
+    }
+
+    .primary-btn-outside:hover {
+        background-color: var(--secondary-yellow2);
+    }
 }
