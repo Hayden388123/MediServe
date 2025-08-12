@@ -113,6 +113,18 @@ header {
     display: none;
 }
 
+.user-m {
+    border-radius: 50%;
+    background-color: var(--blue-600);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(../img/daughter.jpg);
+    background-size: cover;
+}
+
 /* search-bar*/
 section {
     min-height: 100vh;
@@ -157,6 +169,11 @@ section {
     right: 10px;
 }
 
+.bread {
+    color: var(--secondary-gray2);
+    padding-top: .5rem;
+}
+
 /* client-options */
 .client-options {
     display: flex;
@@ -174,8 +191,7 @@ section {
     text-align: center;
 }
 
-.client-option1 a,
-.client-option a {
+.client-options a {
     color: black;
 }
 
@@ -253,9 +269,12 @@ section {
     border-radius: 20px;
     font-size: var(--font-size-h6);
     cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.service-button a {
+.service-container a {
     color: black;
 }
 
