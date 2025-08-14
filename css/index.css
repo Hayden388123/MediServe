@@ -61,6 +61,10 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    /* 確保在上層 */
 }
 
 .logo img {
@@ -244,8 +248,8 @@ section {
     box-shadow: 0px 3px 15px 3px rgba(110, 110, 110, 0.15);
     display: flex;
     flex-direction: column;
-    align-items: center;
-    padding: .5rem;
+    padding: 2rem;
+    border: none;
 }
 
 .modal-header {
@@ -265,7 +269,6 @@ section {
 .service-button {
     width: 100%;
     background-color: white;
-    border: none;
     border-radius: 20px;
     font-size: var(--font-size-h6);
     cursor: pointer;
@@ -745,19 +748,19 @@ footer {
     /************ remind ************/
     .remind-group {
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
         align-items: center;
+        gap: 3rem
     }
 
     .card-remind {
-        min-width: 35vw;
-        margin-right: 1.5rem;
+        min-width: 30vw;
     }
 
     .primary-btn-outside {
         position: fixed;
         bottom: 60px;
-        right: 80px;
+        right: 30px;
     }
 
     .primary-btn-outside:hover {
