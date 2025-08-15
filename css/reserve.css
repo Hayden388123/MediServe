@@ -258,6 +258,7 @@
            display: flex;
            justify-content: center;
            gap: 1.5rem;
+           margin-bottom: 3rem;
        }
 
        .doctor-button {
@@ -266,7 +267,6 @@
            background-color: white;
            border-radius: 20px;
            border: 1px solid var(--secondary-gray2);
-           margin-bottom: 3rem;
            font-size: var(--font-size-h6);
        }
 
@@ -294,7 +294,7 @@
        }
 
        .gender-list {
-           width: 49%;
+           width: 150px;
            display: flex;
        }
 
@@ -430,6 +430,12 @@
 
            .gender-list {
                justify-content: center;
+               width: 248px;
+           }
+
+           label {
+               width: 100px;
+               text-align-last: justify;
            }
 
            .gender-options {
