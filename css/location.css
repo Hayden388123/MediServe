@@ -70,7 +70,7 @@
      display: flex;
      flex-direction: column;
      align-items: center;
-     padding: 3rem;
+     padding: 2rem;
  }
 
  .title {
@@ -84,21 +84,21 @@
      width: 90%;
      background-color: white;
      border: 1px solid black;
-     border-radius: 20px;
-     margin-bottom: 48px;
+     border-radius: 1.25rem;
+     margin-bottom: 1.5rem;
      font-size: var(--font-size-h5);
  }
 
  .yes-no {
-     width: 90%;
+     width: 100%;
      display: flex;
      justify-content: center;
-     gap: 4rem;
+     gap: 1rem;
  }
 
  .secondary-btn {
      padding: 16px;
-     width: 120px;
+     width: 45%;
      background-color: var(--secondary-gray1);
      border-radius: 20px;
      margin-bottom: 16px;
@@ -106,7 +106,7 @@
 
  .primary-btn {
      padding: 16px;
-     width: 150px;
+     width: 50%;
      background-color: var(--secondary-yellow1);
      border-radius: 20px;
      margin-bottom: 16px;
@@ -124,9 +124,14 @@
  @media screen and (min-width: 1024px) {
      body {
          background: url(../img/bg-2.png) no-repeat;
+         background-size: cover;
      }
 
      .card-position {
+         width: 40%;
+     }
+
+     .position-option {
          width: 50%;
      }
 
@@ -134,8 +139,16 @@
          background-color: var(--blue-300);
      }
 
+     .secondary-btn {
+         width: 25%;
+     }
+
      .secondary-btn:hover {
          background-color: var(--secondary-gray2)
+     }
+
+     .primary-btn {
+         width: 30%;
      }
 
      .primary-btn:hover {
